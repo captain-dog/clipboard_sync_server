@@ -15,11 +15,7 @@ class Clip(BaseModel):
 @app.get("/clip")
 async def get_clip(user: Annotated[str | None, Header()] = None):
     clip = storage.get(user, None)
-
-    if clip is not None:
-        del storage[user]
-
-    return {"clip": storage.get(user, None)}
+    return {"clip": clip}
 
 
 @app.post("/clip")
