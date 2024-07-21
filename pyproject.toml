@@ -2,7 +2,7 @@
 name = "clipboard-server"
 version = "0.1.0"
 description = ""
-authors = ["dd <dmytro.danyliuk@fyst.com>"]
+authors = ["captain_dog <nagelsehr@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
